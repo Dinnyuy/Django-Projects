@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home - Betts Organics & Spa
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="text-center py-5" style="background-color: #e8f5e9;">
+    <div class="container">
+        <h1 class="display-5 fw-bold text-success">Welcome to Betts Organics & Spa</h1>
+        <p class="lead text-muted">Experience pure, natural wellness with our handcrafted organic treatments and relaxing spa therapies.</p>
+        <a href="/services" class="btn btn-success btn-lg mt-3">Explore Our Services</a>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center text-success mb-4">Our Featured Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="/static/images/massage.jpg" class="card-img-top" alt="Massage Therapy">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Massage Therapy</h5>
+                        <p class="card-text">Relax and unwind with our therapeutic organic oil massages that heal body and soul.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="/static/images/facial.jpg" class="card-img-top" alt="Organic Facial">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Organic Facials</h5>
+                        <p class="card-text">Rejuvenate your skin naturally with our plant-based facial treatments tailored to your skin type.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="/static/images/products.jpg" class="card-img-top" alt="Natural Products">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Natural Skincare Products</h5>
+                        <p class="card-text">Shop our handmade, chemical-free skincare products crafted with love and care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="text-center py-5" style="background-color: #f1f8e9;">
+    <div class="container">
+        <h3 class="text-success">Ready for a transformation?</h3>
+        <p class="lead">Book an appointment today and discover the healing power of nature.</p>
+        <a href="/contact" class="btn btn-outline-success btn-lg">Get in Touch</a>
+    </div>
+</section>
+{% endblock %}

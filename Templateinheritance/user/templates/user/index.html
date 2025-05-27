@@ -1,0 +1,21 @@
+{% extends "user/base.html" %}
+
+{% block title %}Welcome | Betts Organics & Spa{% endblock %}
+
+{% block content %}
+    <section class="welcome">
+        <h2>Welcome to Betts Organics & Spa</h2>
+        <p>We bring you nature’s finest skincare and wellness experiences, handmade with love and powered by nature.</p>
+        <a href="{% url 'shop' %}" class="btn">Shop Now</a>
+    </section>
+
+    <section class="features">
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>🌿 100% Organic Ingredients</li>
+            <li>🧖‍♀️ Personalized Spa Treatments</li>
+            <li>💧 Skin-Friendly Formulas</li>
+            <li>🌟 Trusted by hundreds of happy customers</li>
+        </ul>
+    </section>
+{% endblock %}

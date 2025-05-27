@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffefb;
+    color: #333;
+}
+
+header {
+    background-color: #eaf4ec;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #d0e8d0;
+}
+
+.branding .logo {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #5c835e;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3e6b3e;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2f4f2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #a7f0ba;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.about-us {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.about-us h2, .about-us h3 {
+    color: #3a3a3a;
+}
+
+.about-us ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
