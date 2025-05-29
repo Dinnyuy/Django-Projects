@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <h1>Thank you for booking!</h1>
+    <p>Name: {{ booking.name }}</p>
+    <p>Email: {{ booking.email }}</p>
+
+    {% if booking.photo %}
+        <h3>Your Uploaded Photo:</h3>
+        <img src="{{ booking.photo.url }}" alt="Uploaded photo" style="max-width: 300px;">
+    {% endif %}
+
+    {% if booking.video %}
+        <h3>Your Uploaded Video:</h3>
+        <video width="300" controls>
+          <source src="{{ booking.video.url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    {% endif %}
+</body>
+</html>

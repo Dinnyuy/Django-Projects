@@ -1,0 +1,17 @@
+{% extends 'user/base.html' %}
+{% load static %}
+
+{% block title %}Book a Session | Betts Organics & Spa{% endblock %}
+
+{% block content %}
+<section class="booking-section">
+    <h2>Book a Wellness Session</h2>
+    <p>Fill out the form below to book a session and receive personalized recommendations.</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+{% endblock %}
