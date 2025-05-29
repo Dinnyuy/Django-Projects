@@ -1,0 +1,39 @@
+{% extends "user/base.html" %}
+
+{% block title %}Contact Us | Betts Organics & Spa{% endblock %}
+
+{% block content %}
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Whether you have a question about our products, services, or simply want to connect — reach out below.</p>
+
+    <div class="contact-details">
+        <p><strong>Phone:</strong> +237 677067324</p>
+        <p><strong>Email:</strong> <a href="mailto:bettsorganicsspa@gmail.com">bettsorganicsspa@gmail.com</a></p>
+        <p><strong>Location:</strong> Balas Obili Yaounde, Cameroon</p>
+    </div>
+
+   <form method="post" action="#">
+    {% csrf_token %}
+    
+    <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Send Message</button>
+    </div>
+</form>
+
+{% endblock %}
